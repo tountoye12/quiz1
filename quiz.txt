@@ -1,0 +1,10 @@
+
+
+Tsk 1:
+Functional requirement
+
+1 Search through contacts
+2 add new contact
+3 update existing contact
+4 Delete contact
+5Merge duplicate contacts
