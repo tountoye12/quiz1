@@ -13,8 +13,6 @@ import java.util.List;
 public class Main {
     public static void main(String[] args) {
 
-        System.out.println("Hello world!");
-
         PhoneNumber davidPhoneNumber1 = new PhoneNumber("240-133-0011", "Home");
         PhoneNumber davidPhoneNumber2 = new PhoneNumber("240-133-0011", "Mobile");
 
@@ -58,7 +56,7 @@ public class Main {
 
     private static List<Contact> sortContacts(List<Contact> contactList) {
         return contactList.stream()
-                .sorted(Comparator.comparing(Contact::getFirstName))
+                .sorted(Comparator.comparing(Contact::getLastName))
                 .toList();
     }
 
