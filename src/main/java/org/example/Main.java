@@ -57,9 +57,8 @@ public class Main {
     }
 
     private static List<Contact> sortContacts(List<Contact> contactList) {
-        Comparator<Contact> contactComparator = Comparator.comparing(Contact::getFirstName);
         return contactList.stream()
-                .sorted(contactComparator)
+                .sorted(Comparator.comparing(Contact::getFirstName))
                 .toList();
     }
 
